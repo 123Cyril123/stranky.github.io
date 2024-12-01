@@ -242,6 +242,7 @@ body, ul, li, h1, h2, p {
       .navbar {
         display: flex;
         justify-content: column;
+        margin-bottom: 100px;
       }
 
       .scroll-button {
