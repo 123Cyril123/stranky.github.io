@@ -213,7 +213,7 @@ body, ul, li, h1, h2, p {
         text-align: center;
         background: none;
         position: absolute;
-        top: 365px;
+        top: 150px;
         left: 0;
         right: 0;
         opacity: 0;
@@ -242,7 +242,6 @@ body, ul, li, h1, h2, p {
       .navbar {
         display: flex;
         justify-content: column;
-        margin-bottom: 100px;
       }
 
       .scroll-button {
