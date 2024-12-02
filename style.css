@@ -270,12 +270,13 @@ body, ul, li, h1, h2, p {
         flex-direction: column; 
         cursor: pointer;
         gap: 4px;
-        margin-left: 47%;
-        margin-bottom: 200px;
+        margin-top: 70px;
         position: absolute;
         top: 20px; /* Adjust this value to set how far down the burger menu is from the top */
         left: 50%;
         transform: translateX(-50%); 
+        padding-right: 20px;
+  
       }
 
       .navbar {
@@ -288,9 +289,10 @@ body, ul, li, h1, h2, p {
       }
 
       .dropdown-menu {
-        margin-left: 180px;
+        margin-left: 41%;
         margin-bottom: 200px;
         font-size: 20px;
+        padding: 0 10px;
       }
   }
   
