@@ -286,6 +286,12 @@ body, ul, li, h1, h2, p {
       .scroll-button {
         margin-bottom: 200px;
       }
+
+      .dropdown-menu {
+        margin-left: 180px;
+        margin-bottom: 200px;
+        font-size: 20px;
+      }
   }
   
   
