@@ -73,7 +73,7 @@ body, ul, li, h1, h2, p {
     justify-content: space-between;
     align-items: center;
     width: 90%; /* Add some padding for responsiveness */
-    max-width: 1200px;
+    max-width: 1800px;
     margin: auto;
     justify-content: center; /* Center the navigation links */
     width: 100%;
