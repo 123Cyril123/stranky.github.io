@@ -104,6 +104,10 @@ body {
     cursor: pointer;
   }
 
+  h1 {
+   margin-top: 100px;
+  }
+
   .footer {
     background-color: #708090;
     width: 100%;
@@ -154,3 +158,30 @@ body {
   ::-webkit-scrollbar-thumb {
     transition: background-color 0.3s ease-in-out;
   }
+
+  .jack img{
+    height: 300px;
+    width: auto;
+  }
+
+  .obr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: 768px) {
+    .obr {
+      display: flex;
+      flex-direction: column
+    }
+
+    .jack img{
+      width: 80%;
+      height: auto;
+    }
+  }
+
