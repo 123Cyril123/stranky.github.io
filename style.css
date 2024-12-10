@@ -256,7 +256,7 @@ body, ul, li, h1, h2, p {
         text-align: left;
         background: none;
         position: absolute;
-        top: 150px;
+        top: 200px;
         left: 0;
         right: 0;
         opacity: 0;
@@ -274,7 +274,7 @@ body, ul, li, h1, h2, p {
         flex-direction: column; 
         cursor: pointer;
         gap: 4px;
-        margin-top: 90px;
+        margin-top: 130px;
         position: absolute;
         top: 20px; /* Adjust this value to set how far down the burger menu is from the top */
         left: 50%;
@@ -296,8 +296,8 @@ body, ul, li, h1, h2, p {
       }
 
       .dropdown-menu {
-        margin-left: 31%;
-        margin-bottom: 260px;
+        margin-left: 34%;
+        
         font-size: 20px;
         padding: 0 10px;
       }
