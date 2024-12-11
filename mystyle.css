@@ -110,12 +110,14 @@ p {
 
 .team-member {
     width: 58%;
-    background-color: white;
+    color: #333333; /* Text color */
+    background-color: #F5F5F5; /* Background color */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     text-align: center;
     border-radius: 8px;
     padding: 20px;
+    text-align: justify; /* Align text evenly on both sides */
 }
 
 .info {
@@ -126,6 +128,41 @@ p {
     text-align: center;
     border-radius: 8px;
     padding: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.info.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.info1 {
+    color: #FFEB3B; /* Text color */
+    background-color: #6200EA; /* Background color */
+}
+
+.info1 h2 {
+    color: #FFEB3B; /* Text color */
+}
+
+.info2 {
+    color: #4E342E; /* Text color */
+    background-color: #FFF3E0; /* Background color */
+}
+
+.info2 h2 {
+    color: #4E342E; /* Text color */
+}
+
+.info3 {
+    color: #37474F; /* Dark Gray text for better contrast */
+    background-color: #A5D6A7; /* Background color */
+}
+
+.info3 h2 {
+    color: #37474F; /* Dark Gray text for better contrast */
 }
 
 ul {
@@ -150,3 +187,48 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .section {
+        margin-bottom: 50px;
+        font-size: 7px;
+    }
+
+    p {
+        font-size: 1.2em;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    h2 {
+        font-size: 1.9em;
+        margin-bottom: 10px;
+    }
+
+    li {
+        margin-top: 40px;
+        font-size: 15px;
+        
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .citaty h2{
+        font-size: 22px;
+    }
+
+    .citaty p {
+        font-size: 13px;
+    }
+
+    .team-member {
+        width: 100vh;
+        height: auto;
+        text-align: center;
+    }
+
+  }

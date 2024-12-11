@@ -43,15 +43,17 @@
                     Karlštejn v osadě Krupná. Naším cílem je odchovat zdravé, povahově vyrovnané a sebevědomé psy. Snažíme se také o propagaci tohoto plemene a spolupracujeme s 
                     dalšími chovateli v České republice.</p>
                 </div>
-                <section class="section cit2">
-                    <h2>„Psi nejsou celým naším životem, ale díky nim je náš život úplný.“</h2>
-                    <p>Roger Caras</p>
-                </section>
+               <div class="citaty">
+                    <section class="section cit2">
+                        <h2>„Psi nejsou celým naším životem, ale díky nim je náš život úplný.“</h2>
+                        <p>Roger Caras</p>
+                    </section>
+                </div>
             </div>
         </section>
     </section>
     <section class="sekce">
-        <section class="info">
+        <section class="info info1">
             <h2> Informace pro zájemce: </h2>
             <ul>
                 <li>máme štěňátka s průkazem původu,</li>
@@ -67,7 +69,7 @@
                 <p>Axel Munte</p>
             </section>
         </div>
-        <section class="info">
+        <section class="info info2">
             <h2>Co nabízíme:</h2>
             <ul>
                 <li>dostatek informcí o výchově, výcviku a  péči o zdraví štěňátka</li>
@@ -84,7 +86,7 @@
             </section>
         </div>
     </section>
-        <section class="info">
+        <section class="info info3">
             <h2>Co dostane štěňátko s sebou do nového domova:</h2>
             <ul>
                 <li>štěňátko bude odčervené, naočkované a očipované, s vystaveným mezinárodním PET pasem</li>
@@ -101,4 +103,27 @@
 </footer>
 
 </body>
+<script>
+    const sections = document.querySelectorAll('.info');
+
+    const options = {
+      root: null,
+      threshold: 0.1
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, options);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </html>
