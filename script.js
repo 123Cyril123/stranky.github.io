@@ -36,3 +36,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
+document.querySelectorAll('a.scroll-link').forEach(link => {
+  link.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent default anchor behavior
+      const targetId = this.getAttribute('href').substring(1); // Get the target ID
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+          window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: 'smooth' // Smooth scroll to the target element
+          });
+      }
+  });
+});
