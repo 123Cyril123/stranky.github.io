@@ -239,7 +239,98 @@ body {
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 250px;
+    height: 400px;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+
+  .scroll-button {
+    display: block;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-menu li a{
+    font-size: 11px;
+    margin-left: 100px;
+  }
+
+  .dropdown-menu li {
+    width: 400px;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: -10%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .dropdown li {
+    margin: 0;
+    padding: 5px 10px;
+  }
+
+  .dropdown-menu 
+
+  .burger-menu .line {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column; 
+    cursor: pointer;
+    gap: 4px;
+    margin-top: 85px;
+    position: absolute;
+    top: 20px; /* Adjust this value to set how far down the burger menu is from the top */
+    left: 50%;
+    transform: translateX(-50%); 
+    padding-right: 20px;
+
+  }
+
+}
+
+
+
+
+
+
+@media (min-width: 481px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
   .nav-links {
       display: flex;
       flex-direction: column;
@@ -281,6 +372,13 @@ body {
       align-items: flex-start; 
     }
 
+    .burger-menu .line {
+      width: 30px;
+      height: 4px;
+      background-color: white;
+      transition: transform 0.3s ease;
+    }
+
     
 
     .scroll-button {
@@ -288,15 +386,16 @@ body {
     }
 
     .dropdown-menu {
-      margin-left: 34%;
-      
-      font-size: 2px;
+      margin-left: 0%;
       padding: 0 10px;
     }
 
-    .dropdown-menu li a {
-      font-size: 12px;
+
+    .dropdown-menu li a{
+      font-size: 11px;
+      margin-left: 130px;
     }
+  
 
     .nazev {
       text-align: center;
@@ -305,6 +404,116 @@ body {
       display: flex;
       justify-content: center;
     }
+}
+
+@media (min-width: 769px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+    background: none;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    justify-content: space-around;
+    gap: 10px;
+    font-size: 30px;
+  }
+
+  .burger-menu {
+    display: none;
+    flex-direction: column; 
+    cursor: pointer;
+    gap: 4px;
+    margin-top: 130px;
+    position: absolute;
+    top: 20px; /* Adjust this value to set how far down the burger menu is from the top */
+    left: 50%;
+    transform: translateX(-50%); 
+    padding-right: 20px;
+
+  }
+
+  .burger-menu .line {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    transition: transform 0.3s ease;
+    display: none;
+  }
+
+  .dropdown-menu li a{
+    font-size: 18px;
+    margin-left: 0px;
+  }
+
+  .newsection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsection img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 50px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+    background: none;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    justify-content: space-around;
+    gap: 10px;
+    font-size: 30px;
+  }
+
+  .burger-menu {
+    display: none;
+    flex-direction: column; 
+    cursor: pointer;
+    gap: 4px;
+    margin-top: 130px;
+    position: absolute;
+    top: 20px; /* Adjust this value to set how far down the burger menu is from the top */
+    left: 50%;
+    transform: translateX(-50%); 
+    padding-right: 20px;
+
+  }
+
+  .burger-menu .line {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    transition: transform 0.3s ease;
+    display: none;
+  }
+
+  .dropdown-menu li a{
+    font-size: 18px;
+    margin-left: 0px;
+  }
 }
 
 

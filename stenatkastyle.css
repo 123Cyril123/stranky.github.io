@@ -64,16 +64,22 @@ body {
   }
 
   .home-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
     display: block;
     margin-top: 20px;
     font-size: 1.2em;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .home-link:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .lightbox {

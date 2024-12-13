@@ -79,3 +79,9 @@ header::before {
     text-align: center;
     background: #f4f4f4;
 }
+
+@media  (max-width: 768px) {
+    .scroll-link {
+        margin-top: 550px;
+    }
+}
