@@ -6,8 +6,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.8;
+    background: linear-gradient(to bottom, #f5f5f5, #eaeaea);
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
+
+body {
+
+  }
 
 html {
     scroll-behavior: smooth; /* Enables smooth scrolling */
@@ -31,6 +39,23 @@ header::before {
     height: 100%;
     background: url('images/Albiero.jpeg') no-repeat top/cover;
     z-index: -1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    color: #2C2C2C;
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #2C2C2C;
+    font-family: "Quicksand", sans-serif;
 }
 
 
@@ -69,19 +94,52 @@ header::before {
     border-radius: 0px;
 }
 
+.content {
+    max-width: 800px;
+    margin: 200px auto;
+    padding: 20px;
+}
+
 #content {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
     text-align: center;
-    background: #f4f4f4;
 }
 
 @media  (max-width: 768px) {
     .scroll-link {
         margin-top: 550px;
     }
+
+    .content {
+        height: 0;;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20%;
+    }
+
+    .content p {
+        font-size: 10px;
+        line-height: 1.3;
+    }
+
+    .content h1 {
+        font-size: 16px;
+    }
 }
+
+.footer {
+    background-color: #708090;
+    width: 100%;
+    color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

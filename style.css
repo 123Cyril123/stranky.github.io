@@ -239,6 +239,8 @@ body {
 }
 
 /* Responsive design */
+
+
 @media (max-width: 480px) {
   html, body {
     margin: 0;
@@ -255,16 +257,26 @@ body {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    margin-top: 250px;
+    margin-bottom: 10px;
     height: 400px;
   }
 
   .nav-links a {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .scroll-button {
-    display: block;
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 23px;
+    color: white;
+    background: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+    top: 275px;
   }
 
   .dropdown {
@@ -278,7 +290,7 @@ body {
   }
 
   .dropdown-menu li {
-    width: 400px;
+    width: 355px;
   }
 
   .dropdown-menu {
@@ -287,6 +299,14 @@ body {
     left: -10%;
     margin: 0;
     padding: 0;
+  }
+
+  .dropdown-menu1 {
+    left: -50%;
+  }
+
+  .dropdown-menu2 {
+    left: -20%;
   }
 
   .dropdown li {
@@ -308,13 +328,19 @@ body {
     flex-direction: column; 
     cursor: pointer;
     gap: 4px;
-    margin-top: 85px;
+    margin-top: 55px;
     position: absolute;
     top: 20px; /* Adjust this value to set how far down the burger menu is from the top */
     left: 50%;
     transform: translateX(-50%); 
     padding-right: 20px;
 
+  }
+
+  .nazev {
+    position: absolute;
+    top: -40px;
+    font-size: 10px;
   }
 
 }
@@ -346,6 +372,7 @@ body {
       justify-content: space-around;
       gap: 10px;
       font-size: 30px;
+      height: 400px;
     }
   
     .nav-links.show {
@@ -385,15 +412,30 @@ body {
       margin-bottom: 200px;
     }
 
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
     .dropdown-menu {
-      margin-left: 0%;
-      padding: 0 10px;
+      position: absolute;
+      top: 0;
+      left: 300%;
+      margin: 0;
+      padding: 0;
     }
 
 
     .dropdown-menu li a{
-      font-size: 11px;
-      margin-left: 130px;
+      font-size: 16px;
+    }
+
+    .dropdown-menu li {
+      width: 285px;
+    }
+
+    .dropdown-menu2 {
+      left: 120%;
     }
   
 
@@ -416,17 +458,25 @@ body {
   .nav-links {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    text-align: left;
+    width: 768px;
+    text-align: center;
     background: none;
-    position: absolute;
     top: 200px;
-    left: 0;
-    right: 0;
     opacity: 1;
-    justify-content: space-around;
-    gap: 10px;
-    font-size: 30px;
+    justify-content: space-between;
+    gap: 0px;
+  
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dropdown-toggle {
+    font-size: 20px;
   }
 
   .burger-menu {
@@ -451,6 +501,19 @@ body {
     display: none;
   }
 
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 70px;
+    left: -40px;
+    margin: 0;
+    padding: 0;
+  }
+
   .dropdown-menu li a{
     font-size: 18px;
     margin-left: 0px;
@@ -459,14 +522,16 @@ body {
   .newsection {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
-  .newsection img {
+  .content-images {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding: 10px;
     width: 50px;
+    align-items: center;
   }
 
 }
